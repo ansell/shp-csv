@@ -110,6 +110,7 @@ public class CSVFileState {
             reader = new StringReader(dataInput);
         }
         CsvReader csvReader = new CsvReader(reader);
+        csvReader.setSafetySwitch(false);
         if (!csvReader.readHeaders()) {
             throw new IOException("Error reading csv headers");
         }
