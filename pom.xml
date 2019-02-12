@@ -16,7 +16,7 @@
   <!-- =========================================================== -->
   <groupId>com.github.ansell.shp</groupId>
   <artifactId>shp-csv</artifactId>
-  <version>21-RC</version>
+  <version>21-RC-SNAPSHOT</version>
   <packaging>jar</packaging>
   <name>CSVDataStore</name>
   <description>
@@ -60,6 +60,10 @@
     </developer>
   </developers>
 
+  <properties>
+    <geotools.version>21-RC</geotools.version>
+  </properties>
+
 
   <!-- =========================================================== -->
   <!--     Dependency Mangement                                    -->
@@ -68,17 +72,17 @@
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-main</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-epsg-hsql</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
     </dependency>
     <dependency>
       <groupId>org.geotools</groupId>
       <artifactId>gt-sample-data</artifactId>
-      <version>${project.version}</version>
+      <version>${geotools.version}</version>
       <scope>test</scope>
     </dependency>
     <dependency>
@@ -96,7 +100,7 @@
     <dependency>
     	<groupId>org.geotools</groupId>
     	<artifactId>gt-shapefile</artifactId>
-    	<version>${project.version}</version>
+    	<version>${geotools.version}</version>
     	<scope>test</scope>
     </dependency>
     <dependency>
