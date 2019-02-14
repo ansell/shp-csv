@@ -16,7 +16,7 @@
   <!-- =========================================================== -->
   <groupId>com.github.ansell.shp</groupId>
   <artifactId>shp-csv</artifactId>
-  <version>21-RC-SNAPSHOT</version>
+  <version>21-RC</version>
   <packaging>jar</packaging>
   <name>CSVDataStore</name>
   <description>
